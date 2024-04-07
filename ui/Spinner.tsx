@@ -8,7 +8,7 @@ type SpinnerProps = {
 
 const Spinner = ({size, className}: SpinnerProps): React.JSX.Element => {
     return (
-        <svg width={size} viewBox="0 0 24 24" className={`${className}`}>
+        <svg width={size} viewBox="0 0 24 24" className={`${className} dark:fill-white fill-black`}>
             <g>
                 <rect x="11" y="2.5" width="2" height="5" opacity=".08" rx={1}/>
                 <rect x="11" y="2.5" width="2" height="5" transform="rotate(30 12 12)" opacity=".14" rx={1}/>
