@@ -4,6 +4,7 @@ import Navbar from "./ui/Navbar";
 import BadgeSelector from "./ui/BadgeSelector";
 import Popup from "./ui/Popup";
 import Badge from "./ui/Badge";
+import Calendar from "./ui/Calendar"
 
 export {
     Button,
@@ -11,7 +12,8 @@ export {
     Navbar,
     BadgeSelector,
     Popup,
-    Badge
+    Badge,
+    Calendar
 };
 
 // Made by SysWhite :D
