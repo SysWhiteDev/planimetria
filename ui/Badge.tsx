@@ -7,8 +7,13 @@ type BadgeProps = {
   textColor?: string;
 };
 
-const Badge = ({ children, type, bgColor, textColor }: BadgeProps): React.JSX.Element => {
-  const RenderBadge = (type) => {
+const Badge = ({
+  children,
+  type,
+  bgColor,
+  textColor,
+}: BadgeProps): React.JSX.Element => {
+  const RenderBadge = (type: string | undefined) => {
     switch (type) {
       case "green":
         return (
@@ -36,7 +41,10 @@ const Badge = ({ children, type, bgColor, textColor }: BadgeProps): React.JSX.El
         );
       default:
         return (
-          <span style={{color: textColor, backgroundColor: bgColor}} className={`text-xs ${!bgColor && "dark:bg-neutral-400 bg-neutral-300"} ${!textColor && "dark:text-neutral-700 text-neutral-800"} px-1.5 py-0.5 rounded-md`}>
+          <span
+            style={{ color: textColor, backgroundColor: bgColor }}
+            className={`text-xs ${!bgColor && "dark:bg-neutral-400 bg-neutral-300"} ${!textColor && "dark:text-neutral-700 text-neutral-800"} px-1.5 py-0.5 rounded-md`}
+          >
             {children}
           </span>
         );

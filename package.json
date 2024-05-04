@@ -1,6 +1,6 @@
 {
   "name": "planimetria",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "A complete UI Library for nextjs + tailwind apps",
   "main": "index.ts",
   "scripts": {
